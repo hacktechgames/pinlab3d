@@ -10,46 +10,79 @@
 </head>
 <body>
     <header>
+        <div class="logo">
+            <h1>PinLab3D</h1>
+            <p>Oggetti personalizzati, creati per te!</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">Chi Siamo</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Gadget</a></li>
+                <li><a href="#order">Ordina</a></li>
                 <li><a href="#contact">Contatti</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Benvenuti su PinLab3D</h1>
-        <p>Stampa 3D di oggetti personalizzati per ogni esigenza.</p>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Benvenuti nel futuro della personalizzazione!</h2>
+            <p>Stampa 3D per oggetti unici, pensati e creati appositamente per te.</p>
+            <a href="#order" class="btn">Ordina Ora</a>
+        </div>
     </section>
 
     <section id="about">
         <h2>Chi Siamo</h2>
-        <p>Siamo un laboratorio di stampa 3D specializzato in creazioni personalizzate per ogni tipo di progetto.</p>
+        <p>PinLab3D è il tuo laboratorio di stampa 3D per la creazione di oggetti personalizzati. Offriamo soluzioni innovative per ogni tipo di richiesta, dalle idee più semplici a quelle più complesse!</p>
     </section>
 
     <section id="portfolio">
-        <h2>Il Nostro Portfolio</h2>
-        <div class="portfolio-gallery">
-            <img src="assets/oggetto1.jpg" alt="Oggetto 1">
-            <img src="assets/oggetto2.jpg" alt="Oggetto 2">
-            <img src="assets/oggetto3.jpg" alt="Oggetto 3">
+        <h2>I Nostri Gadget Personalizzati</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1547495068-57cd7f5e85ea?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MnwwfDF8c2VhcmNofDJ8fGZ1bGwtc3RhcnxlbnwwfDB8fHwxNjQ0Njg1NzY5&ixlib=rb-1.2.1&q=80&w=400" alt="Gadget personalizzato 1">
+                <h3>Figura Personalizzata</h3>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1594769432765-e7b8d89cd3fd?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MnwwfDF8c2VhcmNofDJ8fGZ1bGwtc3RhcnxlbnwwfDB8fHwxNjQ0Njg1NzY5&ixlib=rb-1.2.1&q=80&w=400" alt="Gadget personalizzato 2">
+                <h3>Oggetto Su Misura</h3>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1600334840609-d33a96f80c5f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MnwwfDF8c2VhcmNofDJ8fGZ1bGwtc3RhcnxlbnwwfDB8fHwxNjQ0Njg1NzY5&ixlib=rb-1.2.1&q=80&w=400" alt="Gadget personalizzato 3">
+                <h3>Gadget Funzionale</h3>
+            </div>
         </div>
+    </section>
+
+    <section id="order">
+        <h2>Ordina il Tuo Gadget Personalizzato</h2>
+        <form action="mailto:info@pinlab3d.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gadget">Tipo di Gadget:</label>
+            <select id="gadget" name="gadget">
+                <option value="Figura Personalizzata">Figura Personalizzata</option>
+                <option value="Oggetto Su Misura">Oggetto Su Misura</option>
+                <option value="Gadget Funzionale">Gadget Funzionale</option>
+            </select>
+
+            <label for="message">Descrizione del Gadget:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Invia Ordine</button>
+        </form>
     </section>
 
     <section id="contact">
         <h2>Contattaci</h2>
-        <form action="mailto:info@pinlab3d.com" method="post" enctype="text/plain">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Invia</button>
-        </form>
+        <p>Per qualsiasi domanda, non esitare a contattarci!</p>
+        <p>Email: <a href="mailto:info@pinlab3d.com">info@pinlab3d.com</a></p>
     </section>
 
     <footer>
