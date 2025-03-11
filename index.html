@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PinLab3D - Stampa 3D di oggetti personalizzati">
+    <title>PinLab3D - Stampa 3D Personalizzata</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Benvenuti su PinLab3D</h1>
+        <p>Stampa 3D di oggetti personalizzati per ogni esigenza.</p>
+    </section>
+
+    <section id="about">
+        <h2>Chi Siamo</h2>
+        <p>Siamo un laboratorio di stampa 3D specializzato in creazioni personalizzate per ogni tipo di progetto.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Il Nostro Portfolio</h2>
+        <div class="portfolio-gallery">
+            <img src="assets/oggetto1.jpg" alt="Oggetto 1">
+            <img src="assets/oggetto2.jpg" alt="Oggetto 2">
+            <img src="assets/oggetto3.jpg" alt="Oggetto 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contattaci</h2>
+        <form action="mailto:info@pinlab3d.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PinLab3D. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
