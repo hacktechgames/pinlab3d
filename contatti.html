@@ -9,4 +9,46 @@
 </head>
 <body>
 
-    <header
+    <header>
+        <div class="logo">
+            <h1>PinLab3D</h1>
+            <p>Oggetti personalizzati, creati per te!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="ordina.html">Ordina</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione Contatti -->
+    <section id="contact" class="contact">
+        <h2>Contattaci</h2>
+        <p>Hai domande o richieste particolari? Scrivici utilizzando il modulo sottostante, e ti risponderemo il prima possibile.</p>
+
+        <form action="mailto:pinlab3d@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Oggetto:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Invia Messaggio</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PinLab3D. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
