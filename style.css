@@ -44,6 +44,14 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #4CAF50;
 }
+/* Stile per il logo */
+.logo-img {
+    max-width: 150px; /* Limita la larghezza massima del logo */
+    height: auto; /* Mantiene le proporzioni corrette */
+    display: block; /* Assicura che l'immagine non stia in linea con il testo */
+    margin-bottom: 10px; /* Spazio sotto il logo */
+}
+
 
 /* Hero Section */
 .hero {
