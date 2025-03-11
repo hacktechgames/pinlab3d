@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -5,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PinLab3D - Stampa 3D di oggetti personalizzati">
     <title>PinLab3D - Stampa 3D Personalizzata</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="style.css"> <!-- Assicurati che il percorso sia corretto -->
 </head>
 <body>
 
@@ -54,4 +54,46 @@
                 <h3>Oggetto Su Misura</h3>
             </div>
             <div class="item">
-                <img src="https://images.unsplash.com/photo-1591120607107-9fa09c93d4f9?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MnwwfDF8c2VhcmNofDJ
+                <img src="https://images.unsplash.com/photo-1591120607107-9fa09c93d4f9?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg5MnwwfDF8c2VhcmNofDJ8fGZ1bGwtc3RhcnxlbnwwfDB8fHwxNjQ0Njg1NzY5&ixlib=rb-1.2.1&q=80&w=400" alt="Gadget personalizzato 3">
+                <h3>Gadget Funzionale</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ordina Section -->
+    <section id="order" class="order">
+        <h2>Ordina il Tuo Gadget Personalizzato</h2>
+        <form action="mailto:info@pinlab3d.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gadget">Tipo di Gadget:</label>
+            <select id="gadget" name="gadget">
+                <option value="Figura Personalizzata">Figura Personalizzata</option>
+                <option value="Oggetto Su Misura">Oggetto Su Misura</option>
+                <option value="Gadget Funzionale">Gadget Funzionale</option>
+            </select>
+
+            <label for="message">Descrizione del Gadget:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Invia Ordine</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contattaci</h2>
+        <p>Per qualsiasi domanda, non esitare a contattarci!</p>
+        <p>Email: <a href="mailto:info@pinlab3d.com">info@pinlab3d.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 PinLab3D. Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
