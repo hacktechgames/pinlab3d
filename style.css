@@ -179,3 +179,53 @@ footer {
     background-color: #333;
     color: white;
 }
+/* Stili per il modulo di contatto */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Distanza tra i campi del modulo */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form textarea {
+    resize: vertical; /* Consente di ridimensionare solo verticalmente */
+    min-height: 100px; /* Imposta l'altezza minima per la textarea */
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+form .btn {
+    width: auto;
+    align-self: center; /* Centra il pulsante */
+}
